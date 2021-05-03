@@ -93,6 +93,3 @@ if __name__ == "__main__":
 
     fruit_df = get_dataset()
     bounding_box_dict, labels_dict = get_dict(["Placeholder", "Apples", "Strawberry", "Apple_Bad_Spot", "Strawberry_Bad_Spot"])
-
-    print(len(bounding_box_dict))
-    print(len(labels_dict))
