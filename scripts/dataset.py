@@ -7,6 +7,7 @@ import torch
 from torchvision import transforms
 import os
 from PIL import Image
+import numpy as np
 
 
 class FruitDetectDataset(object):
@@ -43,7 +44,7 @@ class FruitDetectDataset(object):
 
         self.id_labels = id_labels
         self.id_bounding_boxes = id_bounding_boxes
-        self.full_image_file_paths = glob.glob("/content/Fruit Defects Dataset /Train/*/*/*.jpeg")
+        self.full_image_file_paths = glob.glob("../ScriptFruitDet/ScriptDataset/Train/*/*/*.jpeg")
 
         self.transforms = transforms
 
